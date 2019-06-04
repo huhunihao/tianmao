@@ -1,0 +1,115 @@
+@charset "uft-8";
+footer {
+  background-image: url(../img/footer.png);
+  background-size: 1702px 410px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  min-height: 558px;
+  border-top: 1px solid #D1D7DC;
+  clear: both;
+  text-align: center;
+  background-color: #fff;
+  position: relative;
+}
+footer .tmall-ensure {
+  width: 1190px;
+  height: 100px;
+  background: url(../img/footer2.jpg) no-repeat;
+  margin: 25px auto;
+}
+footer .tmall-ensure a {
+  float: left;
+  display: block;
+  width: 297px;
+  height: 100px;
+  text-indent: -1000em;
+}
+footer .tmall-desc {
+  width: 1190px;
+  padding-top: 22px;
+  height: 190px;
+  margin: auto;
+  border-top: 1px solid #ededed;
+  background: url(../img/footer3.png) 45px bottom no-repeat;
+  background-color: #fff;
+  background-size: 68px 25px;
+}
+footer .tmall-desc dl {
+  float: left;
+  width: 186px;
+  padding-left: 52px;
+}
+footer .tmall-desc dl dt {
+  color: #646464;
+  font-size: 16px;
+  font-weight: 700;
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+}
+footer .tmall-desc dl dd {
+  text-align: left;
+}
+footer .tmall-desc dl dd a {
+  width: 100px;
+  overflow: hidden;
+  text-align: left;
+  height: 20px;
+  line-height: 20px;
+  color: #8b8b8b;
+  display: block;
+}
+footer .tmall-desc dl dd .mobile-tmall {
+  width: 105px;
+  height: 105px;
+  line-height: 105px;
+  text-align: center;
+}
+footer .tmall-desc dl dd .mobile-tmall img {
+  vertical-align: middle;
+  width: 105px;
+  height: 105px;
+}
+footer .tmall-copyright {
+  width: 1190px;
+  margin: auto;
+  border-top: 2px solid #FF0036;
+  background: #000;
+  text-align: left;
+  min-height: 177px;
+}
+footer .tmall-copyright img {
+  display: inline-block;
+}
+footer .tmall-copyright p {
+  padding: 5px 0;
+}
+footer .tmall-copyright p a {
+  margin-right: 3px;
+  color: #fff;
+}
+footer .tmall-copyright .footer-tmallinfo,
+footer .tmall-copyright .footer-otherlink {
+  width: 1190px;
+  margin: 0 auto;
+  color: #fff;
+  line-height: 25px;
+}
+footer .tmall-copyright .footer-copyright {
+  line-height: 20px;
+  background: #000;
+  color: #a4a4a4;
+  width: 1190px;
+  margin: 0 auto;
+}
+footer .tmall-copyright .footer-copyright a {
+  color: #a4a4a4;
+  margin-right: 65px;
+}
+footer .server-num {
+  width: 1190px;
+  margin: auto;
+  color: #000;
+  font-size: 11px;
+  background: #000;
+}

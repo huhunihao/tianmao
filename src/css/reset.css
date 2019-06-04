@@ -1,0 +1,58 @@
+/* 重置样式 */
+body,p,h1,h2,h3,h4,h5,h6,ol,ul,dt,dd,fieldset,legend,input,img,select,dl{margin:0;padding:0}
+body{background-color: #f5f5f5;}
+a{text-decoration: none;color: #000}
+li{list-style:none}
+img,fieldset{border:0}
+h1,h2,h3,h4,h5,h6,input,button,textarea,select,body{font: 12px/1.5 tahoma,arial,"\5b8b\4f53";}
+/* 设置图片间隙问题 */
+img{display:block}
+.clearfix::after{content:"";display:block;clear:both;height:0;overflow:hidden;visibility:hidden}
+table{border-collapse:collapse;border-spacing:0}
+i,b,strong,em,h1,h2,h3,h4,h5,h6{font-weight:normal;font-style:normal}
+.clear::after{
+    content:"";
+    clear:both;
+    display:block;
+    overflow:hidden;
+}
+@font-face {
+    font-family:mui-global-iconfont;
+    src:url(../fonts/font_1401963178_8135476.eot);
+    src:url(../fonts/font_1401963178_8135476.eot) format('embedded-opentype'), url(../fonts/font_1401963178_8135476.woff) format('woff'), url(../fonts/font_1401963178_8135476.ttf) format('truetype'), url(../fonts/font_1401963178_8135476.svg) format('svg')
+}
+.mui-global-iconfont{
+    font-family:mui-global-iconfont;
+    font-weight: normal;
+    font-style: normal;
+    color:#FF0036
+}
+@font-face {
+    font-family:fpIconFont;
+    src:url(../fonts/font_eu7qkdb0zt3jif6r.eot);
+    src:url(../fonts/font_eu7qkdb0zt3jif6r.eot) format('embedded-opentype'), url(../fonts/font_eu7qkdb0zt3jif6r.woff) format('woff'), url(../fonts/font_eu7qkdb0zt3jif6r.ttf) format('truetype'), url(../fonts/font_eu7qkdb0zt3jif6r.svg) format('svg')
+}
+.fpIconFont{
+    font-family: fpIconFont!important;
+}
+@font-face {
+    font-family:iconfont;
+    src:url(../fonts/font_1451959379_8626566.eot);
+    src:url(../fonts/font_1451959379_8626566.eot) format('embedded-opentype'), url(../fonts/font_1451959379_8626566.woff) format('woff'), url(../fonts/font_1451959379_8626566.ttf) format('truetype'), url(../fonts/font_1451959379_8626566.svg) format('svg')
+}
+.iconfont{
+    font-family: iconfont!important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .2px;
+}
+@font-face{font-family:iconfont-chaoshi;src:url(../fonts/font_w6m45mp1l3h257b9.eot);src:url(../fonts/font_w6m45mp1l3h257b9.eot) format('embedded-opentype'),url(../fonts/font_w6m45mp1l3h257b9.woff) format('woff'),url(../fonts/font_w6m45mp1l3h257b9.ttf)format('truetype'), url(../fonts/font_w6m45mp1l3h257b9.svg) format('svg')}
+
+.iconfont-chaoshi{
+    font-family: iconfont-chaoshi!important;
+}
+@font-face{font-family:tm-detail-font;src:url(../fonts/font_800_ezt8bysfawl.eot);src:url(../fonts/font_800_ezt8bysfawl.eot) format('embedded-opentype'),url(../fonts/font_800_ezt8bysfawl.woff) format('woff'),url(../fonts/font_800_ezt8bysfawl.ttf) format('truetype'),url(../fonts/font_800_ezt8bysfawl.svg) format('svg')}
+.tm-detail-font{
+    font-family: tm-detail-font!important;
+}

@@ -1,0 +1,766 @@
+@charset "utf-8";
+body {
+  overflow-x: hidden;
+}
+/* site-nav  */
+#site-nav {
+  height: 32px;
+  line-height: 32px;
+  font-family: "Microsoft YaHei", tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+  background: #f2f2f2;
+  min-width: 990px;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+  z-index: 500;
+}
+#site-nav .sn-wrapper {
+  color: #999;
+  width: 1230px;
+  position: relative;
+  left: -15px;
+  margin: 0 auto;
+}
+#site-nav .sn-wrapper .sn-login,
+#site-nav .sn-wrapper .sn-logout {
+  padding-left: 20px;
+}
+#site-nav .sn-quick-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#site-nav .sn-quick-menu > li {
+  float: left;
+  position: relative;
+  z-index: 500;
+}
+#site-nav .sn-quick-menu > li:hover a:hover {
+  color: #ff0036;
+  text-decoration: underline;
+}
+#site-nav .sn-quick-menu > li:hover b {
+  transform: rotate(180deg);
+  transform-origin: 50% 30%;
+  transition: transform 0.2s ease-in;
+}
+#site-nav .sn-quick-menu > li:hover .site-secnav {
+  display: block;
+}
+#site-nav .sn-quick-menu > li:nth-child(8):hover > a {
+  color: #999;
+}
+#site-nav .sn-quick-menu > li b {
+  position: absolute;
+  border: 3px solid transparent;
+  border-top-color: #bbb;
+  top: 15px;
+  right: 6px;
+}
+#site-nav .sn-quick-menu > li:nth-child(2) i {
+  position: relative;
+  top: -1px;
+}
+#site-nav .sn-quick-menu > li:nth-child(2) a span {
+  color: #666;
+  padding: 0 2px;
+  font-weight: 700;
+  font-family: Arial;
+}
+#site-nav .sn-quick-menu > li:nth-child(2):hover a span {
+  color: #ff0036;
+}
+#site-nav .sn-quick-menu > li:nth-child(4) {
+  display: inline-block;
+  width: 0;
+  height: 14px;
+  line-height: 14px;
+  vertical-align: top;
+  position: relative;
+  top: 6px;
+  left: 0;
+  font-size: 0;
+  border-left: 1px solid #ccc;
+  margin: 0 2px 0 5px;
+  top: 9px;
+}
+#site-nav .sn-quick-menu .site-secnav a {
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+  padding: 0!important;
+}
+#site-nav .sn-quick-menu .top-nav .site-cont a {
+  line-height: 1.4;
+  position: relative;
+}
+#site-nav .top-nav {
+  width: 1198px;
+  right: 0;
+  top: 33px;
+  padding: 25px 0;
+  line-height: 1.4;
+}
+.sn-wrapper a {
+  color: #999;
+}
+/* li以及a和三角形b的样式集合 */
+#site-nav .sn-quick-menu > li:nth-child(2) > a:hover,
+#site-nav .sn-quick-menu > li:nth-child(4):hover > a,
+#site-nav .sn-quick-menu > li:nth-child(5):hover > a,
+#site-nav .sn-quick-menu > li:nth-child(6):hover > a,
+#site-nav .sn-quick-menu > li:nth-child(8):hover > a {
+  text-decoration: none;
+}
+#site-nav .sn-quick-menu > li:nth-child(2),
+#site-nav .sn-quick-menu > li:nth-child(5),
+#site-nav .sn-quick-menu > li:nth-child(6) {
+  padding: 0 10px;
+}
+#site-nav .sn-quick-menu > li:nth-child(1) > a,
+#site-nav .sn-quick-menu > li:nth-child(3) > a,
+#site-nav .sn-quick-menu > li:nth-child(7) > a,
+#site-nav .sn-quick-menu > li:nth-child(8) > a {
+  padding: 0 10px;
+  display: block;
+  padding-right: 14px;
+  border: solid #f2f2f2;
+  border-width: 0 1px;
+  position: relative;
+}
+/* 二级导航的相同部分 */
+.site-secnav {
+  line-height: 1.4;
+  padding: 8px 10px;
+  position: absolute;
+  border: solid #eee;
+  border-width: 0 1px 1px;
+  background: #fff;
+  display: none;
+}
+#site-nav .sn-quick-menu > li:nth-child(1):hover > a,
+#site-nav .sn-quick-menu > li:nth-child(3):hover > a,
+#site-nav .sn-quick-menu > li:nth-child(7):hover > a,
+#site-nav .sn-quick-menu > li:nth-child(8):hover > a {
+  background-color: #fff;
+  border-color: #eee;
+  padding-bottom: 1px;
+  color: #ff0036;
+}
+/* 第一个li 我的淘宝 */
+/* 二级导航部分 */
+.mytaobao {
+  width: 74px;
+  left: 0;
+  top: 33px;
+}
+/* 第二个li 购物车 */
+/* 第三个li 收藏夹 */
+/* 二级导航部分 */
+.favorite {
+  width: 62px;
+  left: 0;
+  top: 33px;
+}
+/* 第四个li 竖线 */
+/* 第五个li 手机版 */
+/* 第六个li 淘宝网 */
+/* 第七个li 商家支持 */
+/* 二级导航部分 */
+.seller-support {
+  width: 122px;
+  right: 0;
+  top: 33px;
+}
+.seller-support ul {
+  margin-top: -5px;
+  overflow: hidden;
+}
+.seller-support li {
+  padding: 5px 0;
+  height: auto;
+  line-height: 1.4;
+  border-bottom: 1px dotted #827777;
+  margin-right: -20px;
+}
+.seller-support h3 {
+  font-weight: 700;
+  color: #666;
+}
+.seller-support a {
+  display: inline-block !important;
+  width: 48px;
+  margin-right: 20px;
+  line-height: 22px!important;
+}
+/* 第八个li 网站导航 */
+/* 二级导航 */
+.top-nav .site-cont {
+  padding-left: 30px;
+  overflow: hidden;
+  height: 110px;
+}
+.top-nav .site-cont ul {
+  margin-right: -20px;
+  overflow: hidden;
+}
+.top-nav .site-cont ul > li {
+  width: 95px;
+  float: left;
+  padding: 6px 0;
+  overflow: hidden;
+}
+.top-nav h2 {
+  font-size: 16px;
+  padding-bottom: 8px;
+  font-family: '\5FAE\8F6F\96C5\9ED1', arial, "\5b8b\4f53";
+  line-height: 1.4;
+}
+.top-nav h2 span {
+  padding-left: 6px;
+}
+/* 图标 */
+.sn-sitemap-icon {
+  background: url(../img/jinglingtu1.png) 0 0 no-repeat;
+  position: absolute;
+  width: 9px;
+  height: 11px;
+  line-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  top: -7px;
+  right: -9px;
+  z-index: 200;
+}
+.sn-sitemap-icon-hot {
+  background-position: -37px 0;
+}
+.sn-sitemap-icon-new {
+  background-position: -37px -11px;
+}
+/* 热点推荐 */
+.site-hot {
+  width: 455px;
+  float: left;
+}
+.site-hot h2 {
+  color: #f56a00;
+}
+.site-hot a:hover {
+  color: #f56a00!important;
+}
+/* 行业市场 */
+.site-market {
+  width: 455px;
+  float: left;
+  border-left: 1px solid #f5f5f5;
+  border-right: 1px solid #f5f5f5;
+}
+.site-market h2 {
+  color: #2263d4;
+}
+.site-market a:hover {
+  color: #2263d4!important;
+}
+/* 服务指南 */
+.site-help h2 {
+  color: #666;
+}
+.site-help a:hover {
+  color: #666!important;
+}
+header {
+  min-width: 990px;
+  background: #fff;
+  height: 122px;
+  border-bottom: 2px solid #999;
+}
+header .header-wrapper {
+  width: 1190px !important;
+  margin: 0 auto;
+}
+header .header-wrapper .headerCon {
+  width: 1190px;
+}
+header .header-wrapper .headerCon .mallLogo {
+  width: 240px;
+  height: auto;
+  padding-top: 16px;
+  float: left;
+  z-index: 9;
+  line-height: 64px;
+  position: relative;
+}
+header .header-wrapper .headerCon .mallLogo .mlogo {
+  float: left;
+  margin-right: 10px;
+  padding: 0;
+}
+header .header-wrapper .headerCon .mallLogo .mlogo a {
+  width: 190px;
+  height: auto !important;
+  overflow: inherit !important;
+  font-size: 0 !important;
+  padding: 0 0 0 40px;
+  margin-top: 10px;
+  display: block;
+  position: relative;
+}
+header .header-wrapper .headerCon .mallLogo .mlogo a em {
+  position: absolute;
+  display: block;
+  top: 0;
+  cursor: pointer;
+  background: url(../img/tianmaochaoshi.png) no-repeat;
+  width: 130px;
+  height: 48px;
+  background-size: 100% 100%;
+}
+header .header-wrapper .headerCon .header-extra .header-banner {
+  padding-left: 15px !important;
+  padding-top: 25px !important;
+  width: 242px !important;
+  height: auto !important;
+  float: right;
+  padding: 10px 0 0 100px;
+}
+header .header-wrapper .headerCon .header-extra .header-banner .market-feature {
+  text-align: left;
+  margin-right: 5px;
+  width: 300px;
+}
+header .header-wrapper .headerCon .header-extra .header-banner .market-feature li {
+  display: inline-block;
+  margin: 0 8px;
+  vertical-align: middle;
+}
+header .header-wrapper .headerCon .header-extra .header-banner .market-feature li a {
+  color: #666;
+  font-weight: bolder;
+}
+header .header-wrapper .headerCon .header-extra .header-banner .market-feature li a em {
+  font-weight: 400;
+  text-align: right;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #df2d44;
+  text-decoration: none;
+}
+header .header-wrapper .headerCon .header-extra .AreaSelector {
+  float: left;
+  position: relative;
+  top: 25px;
+  z-index: 11;
+  background-color: #fff;
+  margin-top: 36px;
+  max-width: 464px;
+  border-radius: 0 3px 3px 3px;
+}
+header .header-wrapper .headerCon .header-extra .AreaSelector h3 {
+  position: relative;
+  color: #e22a40;
+  padding: 6px 12px;
+  font-size: 16px;
+  border: 1px solid #e5e5e5;
+  line-height: 1.5;
+  margin-top: -36px;
+  border-radius: 3px;
+}
+header .header-wrapper .headerCon .header-extra .AreaSelector h3 i {
+  font-weight: 400;
+  margin: 2px;
+}
+header .header-wrapper .headerCon .header-extra .mallSearch {
+  width: 540px !important;
+  float: right;
+  padding-top: 25px;
+  overflow: hidden;
+}
+header .header-wrapper .headerCon .header-extra .mallSearch form {
+  border: solid #FF0036;
+  border-width: 3px 0 3px 3px;
+  position: relative;
+}
+header .header-wrapper .headerCon .header-extra .mallSearch form .input-wrapper {
+  height: 30px;
+}
+header .header-wrapper .headerCon .header-extra .mallSearch form .input-wrapper #search {
+  height: 30px;
+  width: 439px;
+  font-size: 14px;
+  line-height: 30px;
+  box-sizing: border-box;
+  background: 0 0;
+  padding: 5px 3px 5px 5px;
+  border: none;
+  outline: none;
+}
+header .header-wrapper .headerCon .header-extra .mallSearch form .input-wrapper #search::-webkit-input-placeholder {
+  color: #666666;
+}
+header .header-wrapper .headerCon .header-extra .mallSearch form .input-wrapper #search:focus {
+  color: #000;
+}
+header .header-wrapper .headerCon .header-extra .mallSearch form .input-wrapper #search:focus::-webkit-input-placeholder {
+  color: #cccccc;
+}
+header .header-wrapper .headerCon .header-extra .mallSearch form button {
+  width: 90px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  color: #fff;
+  background-color: #FF0036;
+  font-family: '\5FAE\8F6F\96C5\9ED1', arial, "\5b8b\4f53";
+  border: none;
+}
+.h {
+  width: 1190px;
+  margin: 0 auto;
+}
+.cartConBox {
+  margin-bottom: 50px;
+}
+.jdFont {
+  color: #FF0036;
+}
+.cart-content > li {
+  border: none!important;
+  float: none!important;
+}
+/*购物车分类*/
+.cartBar {
+  margin-top: 10px;
+}
+.cartBar li {
+  float: left;
+  margin-right: 30px;
+}
+.cartBar li:first-child {
+  border-bottom: 1px solid #f10215;
+}
+.cartBar > ul > li > a {
+  height: 37px;
+  line-height: 37px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+.allItmNum {
+  font-size: 14px;
+  font-weight: 700;
+}
+.cartBar .cartIsSel {
+  color: #e2231a;
+}
+/*购物车标题*/
+.catrThead {
+  background: #f3f3f3;
+  border: 1px solid #e0e0e0;
+  padding: 5px 0;
+  margin-bottom: 5px;
+}
+.catrThead > div {
+  display: inline-block;
+}
+.catrThead > div:not(:first-child) {
+  height: 32px;
+}
+.checkBox {
+  width: 122px;
+  height: 18px;
+  padding-left: 11px;
+  padding-top: 7px;
+  display: inline-block;
+}
+.checkBox > input {
+  vertical-align: middle;
+}
+.itTit {
+  width: 300px;
+  line-height: 32px;
+}
+.itProps {
+  width: 140px;
+  line-height: 32px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+.itPrice {
+  width: 130px;
+  line-height: 32px;
+  text-align: right;
+  padding-right: 40px;
+}
+.itQuantity {
+  width: 80px;
+  line-height: 32px;
+  text-align: center;
+}
+.itSum {
+  width: 100px;
+  padding-right: 40px;
+  line-height: 32px;
+  text-align: right;
+}
+.itAction {
+  width: 75px;
+  line-height: 32px;
+  text-align: center;
+}
+/*购物车项目*/
+.itmBox {
+  position: relative;
+  width: calc(98%);
+  height: 117px;
+  border: 1px solid #f1f1f1;
+}
+.itmConBox {
+  width: 100%;
+  height: 117px;
+  padding-left: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.itmIsSelect {
+  background: #fff4e8;
+}
+.itmConBox a:hover {
+  color: #f10215;
+}
+.itmCheckbox {
+  position: absolute;
+  left: 12px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.itmCellTit {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  width: 300px;
+  display: inline-block;
+}
+.itmImgBox {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+}
+.itmCellTit img {
+  display: inline-block;
+  border: 1px solid #eeeeee;
+  width: 80px;
+  height: 80px;
+}
+.childBox {
+  display: inline-block;
+  width: 188px;
+  vertical-align: top;
+  margin-left: 8px;
+}
+.titText {
+  color: #333;
+  font-size: 12px;
+  width: 208px;
+  height: 40px;
+  overflow: hidden;
+  display: inline-block;
+  line-height: 20px;
+}
+.otherServeBox {
+  display: inline-block;
+  height: 20px;
+  width: calc(10%);
+  margin-top: 2px;
+}
+.serveIco {
+  width: 17px;
+  height: 16px;
+  display: inline-block;
+  background: url("../images/cartjlt.png") no-repeat 0 -23px;
+  margin-top: 2px;
+}
+.otherServeBox > a {
+  color: #aaa;
+  vertical-align: 4px;
+  padding-left: 7px;
+  padding-right: 4px;
+}
+.itmProps {
+  display: inline-block;
+  padding: 15px 0 0 100px;
+  line-height: 20px;
+  vertical-align: top;
+  color: #666;
+  font-size: 12px;
+  text-align: left;
+}
+.ov {
+  width: 130px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: default;
+}
+.itmPrice {
+  width: 184px;
+  height: 45px;
+  padding: 15px 25px 10px 0;
+  display: inline-block;
+  vertical-align: top;
+}
+.itmPrice > strong {
+  display: inline-block;
+  width: 100%;
+  font-weight: normal;
+  text-align: right;
+  font-size: 12px;
+  color: #333;
+  cursor: pointer;
+}
+.itmQuantity {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  display: inline-block;
+  width: 80px;
+  height: 42px;
+  font-size: 0;
+  vertical-align: top;
+  padding-left: 5px;
+  position: relative;
+}
+.itmQuantity > a {
+  display: inline-block;
+  border: 1px solid #cbcbcb;
+  color: #666;
+  font-size: 12px;
+  width: 16px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+}
+.itmQuantity > .subItm {
+  border-right: 0;
+  background: #fff;
+}
+.itmQuantity > .addItm {
+  border-left: 0;
+  background: #fff;
+}
+.itmQuantity > input {
+  box-sizing: border-box;
+  width: 42px;
+  height: 20px;
+  border: 1px solid #cbcbcb;
+  text-align: center;
+  padding: 1px;
+}
+.itmQuantity > .isDisable {
+  cursor: default;
+  color: #e9e9e9;
+}
+.itmQuantity > .isDisable:hover {
+  color: #e9e9e9;
+}
+.itmQuantity > div {
+  text-align: center;
+  color: #aaa;
+  height: 20px;
+  line-height: 20px;
+}
+.itmSum {
+  width: 100px;
+  height: 20px;
+  padding: 15px 40px 10px 0;
+  display: inline-block;
+  vertical-align: top;
+}
+.itmSum > strong {
+  width: 100%;
+  display: inline-block;
+  text-align: right;
+  line-height: 20px;
+  padding-left: 15px;
+}
+.cell {
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  width: 75px;
+  height: 40px;
+  vertical-align: top;
+  padding-left: 8px;
+}
+.cell a {
+  width: 125px;
+  height: 20px;
+  display: inline-block;
+  line-height: 20px;
+  color: #666;
+  padding-left: 12px;
+}
+.optionsBox {
+  margin-top: 15px;
+  border: 1px solid #f0f0f0;
+  color: #666;
+}
+.checkbox {
+  height: 18px;
+  width: 80px;
+  line-height: 18px;
+  padding: 16px 0 16px 9px;
+  display: inline-block;
+}
+.checkbox > input {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.optionsBox > a,
+.connRight > a {
+  color: #666;
+  margin-right: 15px;
+}
+.optionsBox > a:hover,
+.connRight > a {
+  color: #f10215;
+}
+.removeAllItems {
+  font-weight: 700;
+}
+.connRight {
+  height: 50px;
+  line-height: 50px;
+  text-align: right;
+}
+.connRight > .flL {
+  color: #666;
+}
+.connRight .jdFont {
+  font-weight: 700;
+}
+.priceSum {
+  display: inline-block;
+}
+.priceSum > em {
+  color: #e2231a;
+  font-size: 16px;
+  font-weight: 700;
+}
+.buySubBtn {
+  width: 94px;
+  height: 52px;
+  display: inline-block;
+  background: #FF0036;
+  margin-right: 0 !important;
+  margin-left: 20px;
+  color: #fff!important;
+  font-size: 20px;
+  text-align: center;
+  font-family: '微软雅黑';
+  border-radius: 10px;
+}
+/*购物车如果为空显示*/
