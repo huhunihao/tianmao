@@ -6,7 +6,7 @@ li{list-style:none}
 img,fieldset{border:0}
 h1,h2,h3,h4,h5,h6,input,button,textarea,select,body{font: 12px/1.5 tahoma,arial,"\5b8b\4f53";}
 /* 设置图片间隙问题 */
-img{display:block}
+img{display:block;width:100%;}
 .clearfix::after{content:"";display:block;clear:both;height:0;overflow:hidden;visibility:hidden}
 table{border-collapse:collapse;border-spacing:0}
 i,b,strong,em,h1,h2,h3,h4,h5,h6{font-weight:normal;font-style:normal}

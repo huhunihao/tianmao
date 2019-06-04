@@ -11,7 +11,7 @@ $(function () {
                 <a href="./details.html?id=${elm.id}" class="grid one-grid-price">
                 <div class="floor-item-content-wrap">
                     <div class="floor-item-tag color-type-green" style="visibility:hidden"></div>
-                    <img src="${pic[0].src}" class="floor-item-img">
+                    <img src="${pic[0].src}" data-original="${pic[0].src}" class="floor-item-img">
                     <div class="floor-item-title">${elm.title}</div>
                     <div class="floor-price">￥${elm.price}</div>
                 </div>
@@ -84,6 +84,11 @@ $(function () {
         $('html,body').animate({
             scrollTop: 0
         }, 1000)
+    });
+    $("img.lazy").lazyload({
+        effect: "fadeIn",
+        placeholder:"../img/loading.gif",
+        threshold: 200
     });
     
 })
